@@ -1,22 +1,23 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+	"compilerOptions": {
+		"target": "ES2022",
+		"lib": ["ES2023"],
+		"module": "CommonJS", // Use CommonJS for server-side code compatibility
+		"skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+		/* For server code */
+		"moduleResolution": "node",
+		"rootDir": "./src", // Ensure this points to your source directory
+		"outDir": "./build", // Output compiled files to the build directory
+		"esModuleInterop": true, // Allows default imports from CommonJS modules
+		"forceConsistentCasingInFileNames": true,
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["vite.config.ts"]
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"include": ["src/**/*.ts"], // Include your server-side TypeScript files
+	"exclude": ["node_modules"]
 }
