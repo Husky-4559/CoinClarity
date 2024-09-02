@@ -2,8 +2,6 @@
 
 CoinClarity is a full-stack application for managing and displaying financial records. The frontend is built using React, React Router, and TypeScript, integrated with Clerk for user authentication and management. The backend is developed using Node.js, Express, and MongoDB with Mongoose. The entire project is structured as a monorepo with separate `client` and `server` directories.
 
-https://coinclarity-1.onrender.com
-
 ## Why I Built This Application
 
 As the world becomes increasingly digitized, managing personal finances has never been more critical. The ease of digital transactions has made it simpler for money to flow out of our accounts, sometimes without us even realizing it. This can lead to overspending, financial stress, and difficulty in achieving long-term financial goals.
